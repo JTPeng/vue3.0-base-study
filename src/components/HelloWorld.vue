@@ -107,18 +107,29 @@
         >
       </li>
     </ul>
+    <a-button type="primary">
+      Primary
+    </a-button>
+    <Button type="danger">
+      danger
+    </Button>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
+import { Button } from 'ant-design-vue'
 
 export default defineComponent({
-  name: "HelloWorld",
+  name: 'HelloWorld',
+  components: { Button },
   props: {
     msg: String
+  },
+  setup(props) {
+    console.log(props.msg)
   }
-});
+})
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
