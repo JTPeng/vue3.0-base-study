@@ -1,4 +1,4 @@
-# vue3-admin-ts
+# vue3-base-study
 
 ## Project setup
 ```
