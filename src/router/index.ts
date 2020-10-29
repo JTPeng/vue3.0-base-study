@@ -19,11 +19,20 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/todoList",
     name: "TodoList",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/todoList/index.vue")
+  },
+  {
+    path: "/recursion",
+    name: "Recursion",
+    component: () =>
+      import("../components/Recursion.vue")
+  },
+  {
+    path: "/notRecursion",
+    name: "NotRecursion",
+    component: () =>
+      import("../components/NotRecursion.vue")
   }
 ];
 
