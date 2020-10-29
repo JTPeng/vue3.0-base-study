@@ -33,7 +33,13 @@ const routes: Array<RouteRecordRaw> = [
     name: "NotRecursion",
     component: () =>
       import("../components/NotRecursion.vue")
-  }
+  },
+  {
+    path: "/toRow",
+    name: "ToRow",
+    component: () =>
+      import("../components/ToRow.vue")
+  },
 ];
 
 const router = createRouter({
