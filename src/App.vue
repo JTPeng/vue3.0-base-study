@@ -7,7 +7,8 @@
     <router-link to="/notRecursion">非递归监听</router-link> |
     <router-link to="/toRow">toRow</router-link> |
     <router-link to="/toRef">ToRef</router-link> |
-    <router-link to="/toRefs">ToRefs</router-link>
+    <router-link to="/toRefs">ToRefs</router-link> |
+    <router-link to="/customRef">CustomRef</router-link>
   </div>
   <router-view />
 </template>

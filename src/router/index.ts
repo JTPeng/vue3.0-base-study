@@ -52,6 +52,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import("../components/ToRefs.vue")
   },
+  {
+    path: "/customRef",
+    name: "CustomRef",
+    component: () =>
+      import("../components/CustomRef.vue")
+  },
 ];
 
 const router = createRouter({
