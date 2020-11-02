@@ -1,11 +1,13 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-    <router-link to="/todoList">TodoList</router-link>
-    <router-link to="/recursion">递归监听</router-link>
-    <router-link to="/notRecursion">非递归监听</router-link>
-    <router-link to="/toRow">toRow</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/todoList">TodoList</router-link> |
+    <router-link to="/recursion">递归监听</router-link> |
+    <router-link to="/notRecursion">非递归监听</router-link> |
+    <router-link to="/toRow">toRow</router-link> |
+    <router-link to="/toRef">ToRef</router-link> |
+    <router-link to="/toRefs">ToRefs</router-link>
   </div>
   <router-view />
 </template>
