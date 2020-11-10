@@ -58,6 +58,18 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import("../components/CustomRef.vue")
   },
+  {
+    path: "/watcher",
+    name: "Watcher",
+    component: () =>
+      import("../pages/watcher.vue")
+  },
+  {
+    path: "/computeder",
+    name: "Computeder",
+    component: () =>
+      import("../pages/computeder.vue")
+  },
 ];
 
 const router = createRouter({

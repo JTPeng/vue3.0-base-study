@@ -8,7 +8,9 @@
     <router-link to="/toRow">toRow</router-link> |
     <router-link to="/toRef">ToRef</router-link> |
     <router-link to="/toRefs">ToRefs</router-link> |
-    <router-link to="/customRef">CustomRef</router-link>
+    <router-link to="/customRef">CustomRef</router-link>|
+    <router-link to="/watcher">watcher</router-link> |
+    <router-link to="/computeder">computeder</router-link>
   </div>
   <router-view />
 </template>
