@@ -10,7 +10,9 @@
     <router-link to="/toRefs">ToRefs</router-link> |
     <router-link to="/customRef">CustomRef</router-link>|
     <router-link to="/watcher">watcher</router-link> |
-    <router-link to="/computeder">computeder</router-link>
+    <router-link to="/computeder">computeder</router-link> |
+    <router-link to="/renderFunc">渲染函数</router-link> |
+    <router-link to="/parentProvide">提供/注入</router-link>
   </div>
   <router-view />
 </template>

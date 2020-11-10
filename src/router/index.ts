@@ -70,6 +70,18 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import("../pages/computeder.vue")
   },
+  {
+    path: "/renderFunc",
+    name: "RenderFunc",
+    component: () =>
+      import("../pages/renderFunc.vue")
+  },
+  {
+    path: "/parentProvide",
+    name: "ParentProvide",
+    component: () =>
+      import("../pages/parentProvide.vue")
+  },
 ];
 
 const router = createRouter({
