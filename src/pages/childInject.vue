@@ -10,30 +10,39 @@
       {{ injectTwo.post }}
       {{ injectTwo.time }}
     </p>
-    <p>newInject:{{newInject}}</p>
+    <p>newInject:{{ newInject }}</p>
     <button @click="handleClick">child</button>
+    <button @click="childSub">减法</button>
+    <button @click="multiplication">乘法</button>
   </div>
 </template>
 
 <script>
-import { inject, reactive, ref, toRaw, toRefs } from 'vue'
+import { inject, onMounted, reactive, ref, toRaw, toRefs } from 'vue'
 export default {
-  setup() {
+  emits: ['multip'],
+  setup(props, { emit }) {
     const componentName = ref('inject')
     const injectOne = inject('http')
     const injectTwo = inject('localhost')
-    const newInject = reactive({...injectTwo})
+    const childSub = inject('sub')
+    const newInject = reactive({ ...injectTwo })
     function handleClick() {
       // console.log(injectTwo)
       injectTwo.post += 1
       // newInject.post += 1
+    }
+    function multiplication() {
+      emit('multip',2)
     }
     return {
       componentName,
       injectOne,
       injectTwo,
       handleClick,
-      newInject
+      newInject,
+      childSub,
+      multiplication
     }
   }
 }

@@ -82,6 +82,18 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import("../pages/parentProvide.vue")
   },
+  {
+    path: "/templateUse",
+    name: "TemplateUse",
+    component: () =>
+      import("../pages/templateUse.vue")
+  },
+  {
+    path: "/customEvent",
+    name: "CustomEvent",
+    component: () =>
+      import("../pages/customEvent.vue")
+  },
 ];
 
 const router = createRouter({

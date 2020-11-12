@@ -12,7 +12,9 @@
     <router-link to="/watcher">watcher</router-link> |
     <router-link to="/computeder">computeder</router-link> |
     <router-link to="/renderFunc">渲染函数</router-link> |
-    <router-link to="/parentProvide">提供/注入</router-link>
+    <router-link to="/parentProvide">提供/注入</router-link>|
+    <router-link to="/templateUse">模板引用</router-link> |
+    <router-link to="/customEvent">自定义事件</router-link>
   </div>
   <router-view />
 </template>
