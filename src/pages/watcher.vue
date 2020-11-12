@@ -28,9 +28,10 @@ export default {
       person.name = 'tim'
       console.log(person)
     }
-    // 修改person.name => watch只能监视person。不能监视person.name
-    watch(person, (val, oldVal) => {
-      console.log('val' , val, 'oldVal' , oldVal, person)
+    // 修改person.name => watch监视对象内的数据时,需要使用函数形式
+    // watch监视的数据必须时一个响应式对象。当把对象中具体某个值取出时,它就失去了响应式性质。可以通过函数的形式设置
+    watch([count, () => person.name], (val, oldVal) => {
+      console.log('val', val, 'oldVal', oldVal, person)
     })
     return {
       person,
