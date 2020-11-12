@@ -15,7 +15,10 @@
     <router-link to="/parentProvide">提供/注入</router-link>|
     <router-link to="/templateUse">模板引用</router-link> |
     <router-link to="/customEvent">自定义事件</router-link> |
-    <router-link to="/mouseMove">鼠标点击</router-link>
+    <router-link to="/mouseMove">鼠标点击</router-link> |
+    <router-link to="/httpRequest">Axios</router-link> |
+    <router-link to="/modal">Modal</router-link> |
+    <router-link to="/asyncSuspense">asyncSuspense</router-link>
   </div>
   <router-view />
 </template>

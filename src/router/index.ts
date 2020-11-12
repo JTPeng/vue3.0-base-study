@@ -100,6 +100,24 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import("../pages/mouseMove.vue")
   },
+  {
+    path: "/httpRequest",
+    name: "HttpRequest",
+    component: () =>
+      import("../pages/httpRequest.vue")
+  },
+  {
+    path: "/modal",
+    name: "Modal",
+    component: () =>
+      import("../pages/modal.vue")
+  },
+  {
+    path: "/asyncSuspense",
+    name: "AsyncSuspense",
+    component: () =>
+      import("../pages/asyncSuspense.vue")
+  },
 ];
 
 const router = createRouter({
