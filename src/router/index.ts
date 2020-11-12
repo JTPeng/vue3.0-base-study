@@ -94,6 +94,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import("../pages/customEvent.vue")
   },
+  {
+    path: "/mouseMove",
+    name: "MouseMove",
+    component: () =>
+      import("../pages/mouseMove.vue")
+  },
 ];
 
 const router = createRouter({
